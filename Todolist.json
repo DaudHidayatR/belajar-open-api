@@ -1,13 +1,21 @@
 {
   "openapi": "3.0.3",
   "info": {
-    "title": "API Title",
-    "version": "1.0"
+    "title": "Todolist RESTful API",
+    "version": "1.0",
+    "description": "Todolist RESTful API",
+    "termsOfService": "https://github.com/DaudHidayatR",
+    "contact": {
+      "name": "Daud Hidayat Ramadhan",
+      "email": "daud28ramadhan@gmail.com",
+      "url": "https://github.com/DaudHidayatR"
+    },
+    "license": {
+      "name": "Apache-2.0",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0"
+    }
   },
   "servers": [
-    {
-      "url": "https://api.server.test/v1"
-    }
   ],
   "paths": {
   }
