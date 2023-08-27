@@ -16,6 +16,22 @@
     }
   },
   "servers": [
+    {
+      "description": "Todolist RESTful API",
+      "url": "https://{environment}.daud.com/DaudHidayatR",
+      "variables": {
+        "environment": {
+          "description": "Server Environment",
+          "default": "dev",
+          "enum": [
+            "dev",
+            "qa",
+            "prod"
+          ]
+        }
+      }
+    }
+
   ],
   "paths": {
   }
