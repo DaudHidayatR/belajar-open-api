@@ -42,16 +42,6 @@
       "get":{
         "summary": "Get all todolist",
         "description": "Get all active todolist by default",
-        "requestBody": {
-          "required": true,
-          "content": {
-            "application/json": {
-            "schema": {
-
-            }
-            }
-          }
-        },
         "parameters": [
           {
             "name": "include done",
@@ -84,6 +74,29 @@
         "post":{
           "summary": "Create new todolist",
           "description": "Create new todolist to database",
+          "requestBody": {
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string",
+                      "minLength": 1,
+                      "required": true
+                    },
+                    "priority": {
+                      "type": "integer",
+                      "format": "int32",
+                      "required": true,
+                      "default": 1
+                    }
+                  }
+                }
+              }
+            }
+          },
           "responses": {
 
           }
@@ -110,7 +123,20 @@
           "content": {
             "application/json": {
               "schema": {
-
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "minLength": 1,
+                    "required": true
+                  },
+                  "priority": {
+                    "type": "integer",
+                    "format": "int32",
+                    "required": true,
+                    "default": 1
+                  }
+                }
               }
             }
           }
