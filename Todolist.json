@@ -42,6 +42,16 @@
       "get":{
         "summary": "Get all todolist",
         "description": "Get all active todolist by default",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+            "schema": {
+
+            }
+            }
+          }
+        },
         "parameters": [
           {
             "name": "include done",
@@ -95,6 +105,16 @@
             }
           }
         ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+
+              }
+            }
+          }
+        },
         "responses": {
 
         }
