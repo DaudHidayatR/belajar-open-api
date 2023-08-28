@@ -64,6 +64,16 @@
               "nullable": false,
               "minLength": 1,
               "maxLength": 100
+            },
+            "examples": {
+              "java" : {
+                "description": "Example of todolist name Java",
+                "value": "JAVA"
+              },
+              "php": {
+                "description": "Example of todolist name PHP",
+                "value": "PHP"
+              }
             }
           }
         ],
@@ -103,6 +113,30 @@
                       }
                     }
                   }
+                },
+                "examples": {
+                  "java" : {
+                    "description": "Example of todolist name Java",
+                    "value": {
+                      "name": "JAVA",
+                      "priority": 1,
+                      "tags": [
+                        "java",
+                        "programming"
+                      ]
+                    }
+                  },
+                  "php": {
+                    "description": "Example of todolist name PHP",
+                    "value": {
+                      "name": "PHP",
+                      "priority": 2,
+                      "tags": [
+                        "php",
+                        "programming"
+                      ]
+                    }
+                  }
                 }
               }
             }
@@ -125,6 +159,16 @@
             "description": "Todolist for updated",
             "schema": {
               "type": "string"
+            },
+            "examples": {
+              "java" : {
+                "description": "Example of todolist id Java",
+                "value": "1"
+              },
+              "php": {
+                "description": "Example of todolist id PHP",
+                "value": "2"
+              }
             }
           }
         ],
@@ -155,6 +199,30 @@
                       "minLength": 1,
                       "maxLength": 100
                     }
+                  }
+                }
+              },
+              "examples": {
+                "java" : {
+                  "description": "Example of todolist name Java",
+                  "value": {
+                    "name": "JAVA",
+                    "priority": 1,
+                    "tags": [
+                      "java",
+                      "programming"
+                    ]
+                  }
+                },
+                "php": {
+                  "description": "Example of todolist name PHP",
+                  "value": {
+                    "name": "PHP",
+                    "priority": 2,
+                    "tags": [
+                      "php",
+                      "programming"
+                    ]
                   }
                 }
               }
