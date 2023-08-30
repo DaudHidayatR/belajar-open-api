@@ -462,5 +462,94 @@
         }
       }
     }
-  }
+  },
+    "components": {
+      "parameters": {
+          "todolistId": {
+            "name": "todolistId",
+            "in": "path",
+            "required": true,
+            "description": "Todolist for updated",
+            "schema": {
+              "type": "string"
+            },
+            "examples": {
+              "java" : {
+                "description": "Example of todolist id Java",
+                "value": "1"
+              },
+              "php": {
+                "description": "Example of todolist id PHP",
+                "value": "2"
+              }
+            }
+          }
+
+      },
+      "schemas": {
+          "Todolist": {
+              "type": "object",
+              "properties": {
+                "id": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "priority": {
+                    "type": "number",
+                    "format": "int32"
+                },
+                "tags": {
+                    "type": "array",
+                    "items": {
+                    "type": "string"
+                    }
+                }
+              }
+          },
+          "CreateOrUpdateTodolist": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "priority": {
+                "type": "number",
+                "format": "int32"
+              },
+              "tags": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "ArrayTodolist": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "priority": {
+                  "type": "number",
+                  "format": "int32"
+                },
+                "tags": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+    }
 }
